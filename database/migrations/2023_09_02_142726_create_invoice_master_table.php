@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('customer_name');
             $table->string('customer_email');
             $table->decimal('invoice_amount',8,2)->default(0);
-            $table->string('file_upload');
             $table->date('invoice_date');
             $table->timestamps();
         });

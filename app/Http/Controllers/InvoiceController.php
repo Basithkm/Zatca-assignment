@@ -161,7 +161,7 @@ class InvoiceController extends Controller
         $master=InvoiceMaster::with('detail')->get();
 
 
-        // return view('invoice.downloads.all_invoive_details',['master'=>$master]);
+        // return view('invoice.downloads.all_invoive_details',['master'=>$master]);    
         return PDF::loadView('invoice.downloads.all_invoive_details', [
             
             'master'=>$master
